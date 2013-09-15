@@ -3,16 +3,12 @@
     %meta charset="utf-8"
     %title Thank You!
   %body
-  %h1 Thanks <%= name %> 
+    %h1 Thanks FIRST_NAME!
     %p Thanks for coming to our conference. We couldn't have done it without you.
     %p Political activism is at the heart of any democracy and your voice needs to be heard.
     %p Please consider reaching out to your following representatives:
     %table
-    %tr 
-     %th Name
-     %th Website 
-   <%legislators.each do |legislator| %>
-       %td <%= "#{legislator.first_name} #{legislator.last_name}" %>
-       %td <%= "#{legislator.website}" %>
-   <% end %>
+      %tr Legislators
+      %td LEGISLATORS
+      
 

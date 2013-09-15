@@ -3,7 +3,7 @@
     %meta charset="utf-8"
     %title Thank You!
   %body
-  %h1 Thanks <%= name %> 
+  %h1 Thanks Aya 
     %p Thanks for coming to our conference. We couldn't have done it without you.
     %p Political activism is at the heart of any democracy and your voice needs to be heard.
     %p Please consider reaching out to your following representatives:
@@ -11,8 +11,20 @@
     %tr 
      %th Name
      %th Website 
-   <%legislators.each do |legislator| %>
-       %td <%= "#{legislator.first_name} #{legislator.last_name}" %>
-       %td <%= "#{legislator.website}" %>
-   <% end %>
+   
+       %td Henry Waxman
+       %td http://www.henrywaxman.house.gov
+   
+       %td Brad Sherman
+       %td http://bradsherman.house.gov
+   
+       %td Adam Schiff
+       %td http://schiff.house.gov
+   
+       %td Barbara Boxer
+       %td http://www.boxer.senate.gov
+   
+       %td Dianne Feinstein
+       %td http://www.feinstein.senate.gov
+   
 
