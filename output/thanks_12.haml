@@ -3,7 +3,7 @@
     %meta charset="utf-8"
     %title Thank You!
   %body
-  %h1 Thanks <%= name %> 
+  %h1 Thanks Megan 
     %p Thanks for coming to our conference. We couldn't have done it without you.
     %p Political activism is at the heart of any democracy and your voice needs to be heard.
     %p Please consider reaching out to your following representatives:
@@ -11,8 +11,20 @@
     %tr 
      %th Name
      %th Website 
-   <%legislators.each do |legislator| %>
-       %td <%= "#{legislator.first_name} #{legislator.last_name}" %>
-       %td <%= "#{legislator.website}" %>
-   <% end %>
+   
+       %td Joyce Beatty
+       %td http://beatty.house.gov
+   
+       %td Patrick Tiberi
+       %td http://tiberi.house.gov
+   
+       %td Steve Stivers
+       %td http://stivers.house.gov
+   
+       %td Robert Portman
+       %td http://www.portman.senate.gov
+   
+       %td Sherrod Brown
+       %td http://www.brown.senate.gov
+   
 
