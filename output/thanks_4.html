@@ -4,7 +4,7 @@
   <title>Thank You!</title>
 </head>
 <body>
-  <h1>Thanks <%= name %></h1>
+  <h1>Thanks David</h1>
   <p>Thanks for coming to our conference.  We couldn't have done it without you!</p>
 
   <p>
@@ -14,12 +14,27 @@
 
   <table>
     <tr><th>Name</th><th>Website</th></tr>
-    <% legislators.each do |legislator| %>
+    
       <tr>
-        <td><%= "#{legislator.first_name} #{legislator.last_name}" %></td>
-        <td><%= "#{legislator.website}" %></td>
+        <td>Jeffrey Chiesa</td>
+        <td>http://www.chiesa.senate.gov</td>
       </tr>
-      <% end %>
+      
+      <tr>
+        <td>Donald Payne</td>
+        <td>http://payne.house.gov</td>
+      </tr>
+      
+      <tr>
+        <td>Albio Sires</td>
+        <td>http://sires.house.gov</td>
+      </tr>
+      
+      <tr>
+        <td>Robert Menéndez</td>
+        <td>http://menendez.senate.gov</td>
+      </tr>
+      
   </table>
 </body>
 </html>

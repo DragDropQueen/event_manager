@@ -36,7 +36,7 @@ contents.each do |row|
   legislators = legislators_by_zipcode(zipcode)
   form_letter = erb_template.result(binding)
   Dir.mkdir("output") unless Dir.exists? "output"
-  filename = "output/thanks_#{id}.haml"
+  filename = "output/thanks_#{id}.html"
   File.open(filename, "w") do |file|
     file.puts form_letter
   end
