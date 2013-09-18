@@ -1,3 +1,6 @@
+class EventManager
+end
+
 require "csv"
 require "sunlight/congress"
 require "erb"
@@ -25,7 +28,7 @@ end
 puts "EventManager Initialized!"
 contents = CSV.open "event_attendees.csv", headers: true, header_converters: :symbol
 
-template_letter = File.read "form_letter.erb"
+template_letter = File.read "./lib/form_letter.erb"
 erb_template = ERB.new template_letter
 
 contents.each do |row|
